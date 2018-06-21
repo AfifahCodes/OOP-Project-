@@ -20,5 +20,6 @@ class address
   int getHouse_no();
   char getBlock();
   string getArea();
-
+  void display();
+  friend ostream& operator << (ostream& out, address c_addrs);
 };

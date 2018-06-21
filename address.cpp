@@ -46,3 +46,15 @@ using namespace std;
   {
     return this->area;
   };
+
+  void address::display()
+  {
+    cout<<"House Number: "<<this->house_no<<endl;
+    cout<<"Block: "<<this->block<<endl;
+    cout<<"Area: "<<this->area<<endl;
+  };
+
+  ostream& operator << (ostream& out, address c_addrs)
+  {
+    return (out<<"House Number: "<<c_addrs.house_no<<endl<<"Block: "<<c_addrs.block<<endl<<"Area: "<<c_addrs.area<<endl);
+  };
